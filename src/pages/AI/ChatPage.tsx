@@ -53,7 +53,7 @@ const Chatbot = () => {
   
  
   // Send request to backend
-  const response = await axios.post("http://localhost:3001/api/chat", {
+  const response = await axios.post("https://apid2-0.onrender.com/api/chat", {
     message: input.trim(),
     user,
   });

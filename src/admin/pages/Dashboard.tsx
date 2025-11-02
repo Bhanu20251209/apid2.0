@@ -434,7 +434,7 @@ const Admin = () => {
     try {
       // NOTE: Using a placeholder array since a live server isn't available in this context.
       // In a real app, this would be a fetch call: 
-      const res = await fetch("http://localhost:3001/admin/alerts");
+      const res = await fetch("https://apid2-0.onrender.com/admin/alerts");
       
       // Placeholder data for demonstration:
       const placeholderData = [
