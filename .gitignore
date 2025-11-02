@@ -29,6 +29,6 @@ dist-ssr
 .env
 .env.local
 .env.*.local
-Backend/.env
+GPT/.env
 Backend/config.env
-Backend/ai
+GPT/ai

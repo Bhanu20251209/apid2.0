@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+// import adminRoutes from "./routes/adminRoutes.js";
+// app.use('/admin',adminRoutes)
 
 import Student from "./models/student.js";
 import Alert from "./models/alert.js";
