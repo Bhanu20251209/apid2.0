@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logo from '/src/assets/logo.jpg';
 import {
   Menu,
   Heart,
@@ -42,7 +43,7 @@ const Navigation: React.FC<NavigationProps> = (props) => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-            <img src="src\assets\logo.jpg" className="h-12 w-12" alt="" />
+            <img src={logo} className="h-12 w-12" alt="Logo" />
               {/* <Shield className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold text-foreground">APID</span> */}
             </Link>

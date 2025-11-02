@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { supabase } from "../lib/supabaseClient";
+
 
 type AuthState = {
   as: "student" | "admin" | "counsellor";

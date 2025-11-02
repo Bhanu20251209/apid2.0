@@ -15,7 +15,14 @@ dotenv.config({ path: "./config.env" });
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://apid20.vercel.app", // your deployed frontend
+    "http://localhost:8080"      // your local Vite frontend
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // ✅ MongoDB Atlas connection
 const uri = process.env.DATABASE_URL;
