@@ -9,9 +9,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     allowedHosts: [
-      '225c8f044300.ngrok-free.app',
       'localhost', 
       '127.0.0.1',
+      'apid2-0-1.onrender.com'
     ]
   },
   plugins: [
