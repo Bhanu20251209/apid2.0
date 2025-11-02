@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
-import { GoogleGenerativeAI } from '@google/generative-ai';
 import axios from "axios"
 import { useAuthStore } from '@/store/AuthStore';
 
@@ -16,10 +15,6 @@ const Chatbot = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const user = useAuthStore(store => store.user)
 
-  const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
-  // const genAI2 = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
-  // const sucideDetector = genAI2.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
